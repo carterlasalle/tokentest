@@ -601,6 +601,16 @@ export default function TokenCalculator() {
 const CSS = `
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
+/* Global reset — remove the browser-default white body/margin that
+   shows around the dark .tc-root as a white "iframe" border. */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: #07090a;
+}
+html { height: 100%; }
+
 .tc-root {
   --bg: #07090a;
   --panel: rgba(20,23,18,0.55);
